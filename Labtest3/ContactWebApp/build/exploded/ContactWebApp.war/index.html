@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>ContactWebApp</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>REGISTER MY CONTACTS</div>
+        
+        <form name="RegisterForm" action="http://localhost:8080/ContactWebApp/InputDataServlet">
+            <P><input type="text" name="name" value="" size="50" /></P>
+            <P><input type="text" name="email" value="" size="50" /></P>
+            <P><input type="text" name="phoneNo" value="" size="12" /></P>
+            <P>
+                <input type="submit" value="Submit" name="submitBtn" />
+                <input type="reset" value="Reset" name="resetBtn" />
+            </P>
+            
+        </form>
+    </body>
+</html>

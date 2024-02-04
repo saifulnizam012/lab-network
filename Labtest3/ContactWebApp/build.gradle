@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'war'
+
+repositories {
+    jcenter()
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile 'javax:javaee-web-api:8.0'
+    
+    testImplementation     'junit:junit:4.13'
+    
+    compile group: 'org.apache.derby', name: 'derbyclient', version: '10.14.2.0'
+ 
+}
